@@ -28,7 +28,7 @@
 			@csrf
 			<button class="btn btn-danger">Hapus</button>
 		</form></td>
-		<td><a href="{{ url('album/'.$row->album_id.'/edit') }}"><button>Edit</button></a></td>
+		<td><a href="{{ url('photo/'.$row->photo_id.'/edit') }}"><button>Edit</button></a></td>
 	</tr>
 @endforeach
 </table>

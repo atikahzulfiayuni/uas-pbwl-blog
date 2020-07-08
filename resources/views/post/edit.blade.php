@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-	<h3>Edit Data Photo</h3>
+	<h3>Edit Data Post</h3>
 		<form action="{{ url('/post/' . $row->post_id) }}" method="POST">
 		<input name="_method" type="hidden" value="PATCH">
 	@csrf
@@ -22,7 +22,7 @@
 		</tr>
 		<tr>
 			<td>Text</td>
-			<td><input type="file" name="post_text" value="{{ $row->post_text }}"></td>
+			<td><input type="text" name="post_text" value="{{ $row->post_text }}"></td>
 		</tr>
 		<tr>
 			<td>ID Category</td>
